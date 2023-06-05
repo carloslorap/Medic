@@ -1,0 +1,51 @@
+header{
+    @include gradientBackground;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    .container{  
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 46% 46%;
+        gap: 8%;
+        align-items: center;
+        justify-content: space-between;
+        .header_content{
+            h1{
+                font-size: 3.5rem;
+                line-height: 1.1;
+                letter-spacing: -3px;
+
+            }
+            p{
+                margin: 1rem 0 2rem;
+                color: $light-color;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+/*================== MEDIA QUERIES(MEDIUM DEVICES) ======================*/
+@media screen and (max-width:1124px){
+header{
+    height: 70vh;
+    .container{
+        display: grid;
+        grid-template-columns: 70% 42%;
+        gap: 1%;
+
+        .header_content{
+            margin-top: 4rem;
+        
+            h1{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+}

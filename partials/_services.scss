@@ -1,0 +1,48 @@
+#services{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        article{
+            @include gradientBackground;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            display: flex;
+            gap: 1.5rem;
+            height: fit-content;
+            transition: all 280ms ease;
+            &:hover{
+                margin-top: -0.8rem;
+            }
+            i{
+                font-size: 1.7rem;
+            }
+            div{
+                h4{
+                    margin-top: 1rem;
+                }
+            }
+
+        }
+    }
+}
+
+
+/*================== MEDIA QUERIES(MEDIUM DEVICES) ======================*/
+@media screen and (max-width:1124px){
+    #services{
+        .container{
+            grid-template-columns: 1fr;
+            gap: 1rem;
+
+            article{
+              div{
+                h4{
+                    margin-bottom: 0.8rem;
+                }
+              }
+            }
+        
+        }
+    }
+}
